@@ -1,0 +1,11 @@
+image: Visual Studio 2019
+
+before_build:
+- dotnet restore
+
+build:
+  project: JCSV.sln
+  verbosity: minimal
+
+test_script:
+- dotnet test
